@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div {
+            border: solid;
+            width: 100px;
+            height: 100px;
+        }
+
+        p.inline-block {
+            display: inline-block;
+            border: solid teal;
+            width: 100px;
+            height: 100px;
+        }
+
+        span {
+            border: solid;
+            font-size: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>block
+        <li>width: width of the page</li>
+        <li>height: 0</li>
+        <li>can change width and height</li>
+    </ul>
+
+    <div></div>
+    <div></div>
+
+    <ul>inline-block
+        <li>width: 0</li>
+        <li>height: 0</li>
+        <li>can change width and height</li>
+    </ul>
+
+    <p class="inline-block"></p>
+    <p class="inline-block"></p>
+
+    <ul>inline
+        <li>width: 0 by default, depends on the content</li>
+        <li>height: font-size</li>
+        <li>can not change width and height</li>
+    </ul>
+
+    <span>test&nbsp;</span>
+    <span>test&nbsp;</span>
+
+</body></html>

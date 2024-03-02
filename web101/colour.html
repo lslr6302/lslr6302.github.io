@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        div#name {
+            /* colour name */
+            background-color: red;
+            border: solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        main {
+            border: solid;
+            width: 100px;
+        }
+
+        #hex {
+            /* 006a5a -> 00(red), 6a(green), 5a(blue) */
+            /* each digit range: 0-9, a-f, A-F */
+            background-color: #006a5a;
+            height: 100px;
+            width: 100px;
+            opacity: 0.6;
+        }
+
+        #rgb {
+            /* range: 0-255 */
+            /* 255 = ff */
+            background-color: rgb(158, 173, 211);
+            border: solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        #rgba {
+            /* rgba: rgb + alpha */
+            /* alpha: transparency */
+            background-color: rgba(158, 173, 211, 0.5);
+            border: solid;
+            height: 100px;
+            width: 100px;
+        }
+
+        body {
+            background-image: url(https://images.unsplash.com/photo-1502082553048-f009c37129b9?q=80&w=2970&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="name"></div>
+    <br>
+    <main>
+        <div id="hex"></div>
+    </main>
+    <br>
+    <div id="rgb"></div>
+    <br>
+    <div id="rgba"></div>
+
+</body></html>
