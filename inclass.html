@@ -7,29 +7,29 @@
     <style>
         body {
             margin: 0;
+            background-color: #d3d0cb;
         }
 
         header {
-            background-color: #383b53;
+            background-color: #587b7f;
             width: auto;
             height: auto;
-            border: solid 1px #383b53;
+            border: solid 1px #587b7f;
         }
 
         h1 {
-            color: #EFF0E5;
+            color: #d3d0cb;
             text-align: center;
         }
 
         hr {
-            border: solid 1px #EFF0E5;
+            border: solid 1px #d3d0cb;
             width: 300px;
             margin-bottom: 40px;
         }
 
         main {
-            background-color: #EBE8D6;
-            border: solid 1px #EBE8D6;
+            background-color: #d3d0cb;
         }
 
         fieldset {
@@ -39,12 +39,51 @@
 
         legend {
             font-size: 20px;
+            color: #393e41;
+        }
+
+        button {
+            background-color: #93b0b4;
+            border: 0px 1px;
+            border-color: #587b7f;
+            border-radius: 8px;
+            cursor: pointer;
+            display: block;
+            font-size: 13px;
+            line-height: 29px;
+            padding: 0 10px;
+            position: relative;
+            text-align: center;
+            vertical-align: middle;
+            width: auto;
+            margin: 5px 0px 0px 30px;
+        }
+
+        a {
+            color: #393e41;
+        }
+
+        a:hover {
+            color: #0b0b09;
+        }
+
+        button:hover {
+            background-color: #587b7f;
+
+            a {
+                color: #d3d0cb;
+            }
         }
 
         footer {
-            background-color: #32213A;
-            color: aliceblue;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #1e2019;
+            color: #d3d0cb;
             text-align: center;
+            border: solid 10px #1e2019;
         }
     </style>
 </head>
@@ -81,9 +120,11 @@
         </fieldset>
 
         <br>
-        <a href="index.html">Main Page</a>
+        <button><a href="index.html">Main Page</a></button>
 
-        <footer></footer>
+        <footer>
+            Copyright &copy; 2024
+        </footer>
     </main>
 
 </body></html>
