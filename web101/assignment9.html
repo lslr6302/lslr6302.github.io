@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Recreate Freelancer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        html {
+            font-family: sans-serif;
+        }
+
+        .seperator hr {
+            display: inline-block;
+            width: 125px;
+            height: 6px;
+            border: none;
+            background-color: white;
+            border-radius: 5px;
+        }
+
+        .seperator i {
+            color: white;
+            font-size: 30px;
+            margin: 0px 20px;
+        }
+
+        .seperator {
+            text-align: center;
+        }
+
+        body {
+            margin: 0;
+        }
+
+        /* header */
+        header {
+            background-color: rgb(26, 188, 156);
+            text-align: center;
+            color: white;
+            padding: 80px 0;
+        }
+
+        header img {
+            width: 250px;
+        }
+
+        header h1 {
+            font-size: 46px;
+            margin-bottom: 24px;
+        }
+
+        header p {
+            font-size: 23px;
+            margin-top: 26px;
+        }
+
+        /* portfolio */
+        #portfolio {
+            text-align: center;
+            padding: 60px 0;
+            padding-bottom: 70px;
+        }
+
+        #portfolio h1 {
+            font-size: 36px;
+            color: rgb(44, 62, 80);
+        }
+
+        .seperator.black i {
+            color: rgb(44, 62, 80);
+        }
+
+        .seperator.black hr {
+            background-color: rgb(44, 62, 80);
+        }
+
+        #portfolio img {
+            width: 400px;
+            border-radius: 10px;
+            margin: 14px;
+        }
+
+        #portfolio main {
+            margin-top: 30px;
+        }
+
+        /* about */
+        #about {
+            background-color: rgb(26, 188, 156);
+            color: white;
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        #about h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        #about p {
+            font-size: 18px;
+            line-height: 1.5;
+            text-align: left;
+            width: 400px;
+            margin: auto;
+            margin-top: 20px;
+        }
+
+        #about button {
+            background-color: #20bc9c;
+            color: white;
+            border: solid 2px;
+            border-radius: 10px;
+            height: 65px;
+            width: 240px;
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        #about #download {
+            margin-right: 10px;
+        }
+
+        /* contact */
+        #contact {
+            text-align: center;
+            padding: 60px 0;
+        }
+
+        #contact h1 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        #contact input {
+            background-color: white;
+            width: 400px;
+            height: 50px;
+            border: none;
+            border-bottom: solid grey 1px;
+            margin-top: 50px;
+            font-size: 24px;
+            padding-bottom: 14px;
+        }
+
+        #contact textarea {
+            background-color: white;
+            width: 400px;
+            height: 100px;
+            border: none;
+            border-bottom: solid grey 1px;
+            margin-top: 50px;
+            font-size: 24px;
+            padding-bottom: 14px;
+        }
+
+        #contact button {
+            background-color: #6ad3bf;
+            border: none;
+            color: white;
+            width: 110px;
+            height: 60px;
+            border-radius: 12px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+
+        #contact #button {
+            text-align: left;
+            margin: auto;
+            width: 400px;
+        }
+
+        /* bottom */
+        #bottom {
+            text-align: center;
+            background-color: #2c3e50;
+            padding: 60px 0px;
+            color: white;
+        }
+
+        #bottom p {
+            margin: 0;
+            font-size: 18px;
+        }
+
+        #bottom div {
+            padding-bottom: 20px;
+        }
+
+        #bottom i {
+            border: solid 2px;
+            border-radius: 100%;
+            padding: 15px;
+            font-size: 20px;
+            margin: 4px;
+        }
+
+        #bottom a {
+            color: #1cb89c;
+        }
+
+        /* footer */
+        footer {
+            text-align: center;
+            background-color: #1a252f;
+            color: white;
+            border: solid 35px #1a252f;
+            font-size: 14px;
+        }
+
+        @media all and (min-width: 768px) {
+            #portfolio img {
+                width: 340px;
+                border-radius: 10px;
+                margin: 14px;
+            }
+
+            #about p {
+                width: 600px;
+            }
+
+            #contact input {
+                width: 600px;
+            }
+
+            #contact textarea {
+                width: 600px;
+            }
+
+            #contact #button {
+                width: 600px;
+            }
+        }
+
+        @media all and (min-width: 992px) {
+            #portfolio img {
+                width: 290px;
+                border-radius: 10px;
+                margin: 14px;
+            }
+
+            #about p {
+                width: 370px;
+                display: inline-block;
+                margin-top: 0px;
+                vertical-align: top;
+                margin-left: 30px
+            }
+
+            #about #para {
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+
+            #contact input {
+                width: 800px;
+            }
+
+            #contact textarea {
+                width: 800px;
+            }
+
+            #contact #button {
+                width: 800px;
+            }
+
+            #bottom div {
+                width: 300px;
+                display: inline-block;
+                margin-left: 30px;
+                vertical-align: top;
+            }
+        }
+
+        @media all and (min-width: 1301px) {
+            #portfolio img {
+                width: 350px;
+                border-radius: 10px;
+                margin: 14px;
+            }
+
+            #bottom div {
+                width: 400px;
+                display: inline-block;
+                margin-left: 30px;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="">
+        <h1>START BOOTSTRAP</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <p>Graphic Artist - Web Designer - Illustrator</p>
+    </header>
+
+    <!--    section#portfolio>img*6-->
+    <section id="portfolio">
+        <h1>PORTFOLIO</h1>
+        <div class="seperator black">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <main>
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cabin.png" alt="">
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/cake.png" alt="">
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/circus.png" alt="">
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/game.png" alt="">
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/safe.png" alt="">
+            <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/portfolio/submarine.png" alt="">
+        </main>
+    </section>
+
+    <section id="about">
+        <h1>ABOUT</h1>
+        <div class="seperator">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <div id="para">
+            <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p>
+            <p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p>
+        </div>
+        <button><i class="fa fa-download me-2" id="download"></i>Free Download!</button>
+    </section>
+
+    <section id="contact">
+        <h1>CONTACT ME</h1>
+        <div class="seperator black">
+            <hr>
+            <i class="fa-solid fa-star"></i>
+            <hr>
+        </div>
+        <form action="">
+            <input name='username' type="text" placeholder="Full name">
+            <br>
+            <input name="email" type="email" placeholder="Email address">
+            <br>
+            <input name="phone" type="tel" placeholder="Phone number">
+            <br>
+            <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <br>
+            <div id="button">
+                <button type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+
+    <section id="bottom">
+        <div>
+            <h1>LOCATION</h1>
+            <p>2215 John Daniel Drive<br>Clark, MO 65243</p>
+        </div>
+        <div>
+            <h1>AROUND THE WEB</h1>
+            <i class="fa-brands fa-facebook-f"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+            <i class="fa-brands fa-dribbble"></i>
+        </div>
+        <div>
+            <h1>ABOUT FREELANCER</h1>
+            <p>Freelance is a free to use, MIT licensed <br>Bootstrap theme created by <a href="https://startbootstrap.com/">Start Bootstrap</a></p>
+        </div>
+    </section>
+
+    <footer>Copyright &copy; 2024</footer>
+</body>
+
+</html>
