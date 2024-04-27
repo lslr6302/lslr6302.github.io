@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>position</title>
+    <style>
+        body {
+            margin-left: 150px;
+        }
+
+        #container {
+            border: solid;
+            height: 500px;
+            width: 300px;
+
+            position: relative;
+        }
+
+        .item {
+            width: 150px;
+            height: 150px;
+            border: solid blue;
+            font-size: 30px;
+            transition: 3s;
+        }
+
+        .one {
+            /* by default, position's value is static */
+            /* set to non-static position */
+            /* relative: relative to its original position */
+            position: relative;
+            right: 0px;
+        }
+
+        .one:hover {
+            right: 100px;
+        }
+
+        .two {
+            /* absolute: relative to its container */
+            /* need to set its container to a non-static position */
+            /* because absolute element looking for a closest non-static container */
+            position: absolute;
+            right: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- #container>.item -->
+    <div id="container">
+        <div class="item one">relative</div>
+        <div class="item two">absolute</div>
+    </div>
+</body></html>

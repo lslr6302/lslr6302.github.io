@@ -13,6 +13,46 @@
             font-family: "Montserrat", sans-serif;
         }
 
+        /* navagation bar */
+        #navBar {
+            background-color: rgb(44, 62, 80);
+            color: white;
+            height: 80px;
+            position: fixed;
+            width: 100%;
+        }
+
+        #navBar h2 {
+            margin: 0;
+            float: left;
+            padding: 25px;
+        }
+
+        #navBar button {
+            float: left;
+            background-color: rgb(26, 188, 156);
+            color: white;
+            position: absolute;
+            right: 50px;
+            border: none;
+            width: 80px;
+            height: 40px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        #navBar ul {
+            display: none;
+            list-style-type: none;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #navBar li {
+            float: left;
+            margin-right: 10px;
+        }
+
         .seperator hr {
             display: inline-block;
             width: 125px;
@@ -214,6 +254,7 @@
             font-size: 14px;
         }
 
+        /* responsive design */
         @media all and (min-width: 768px) {
             #portfolio img {
                 width: 340px;
@@ -239,6 +280,27 @@
         }
 
         @media all and (min-width: 992px) {
+            #navBar h2 {
+                padding-left: 70px;
+            }
+
+            #navBar button {
+                display: none;
+            }
+
+            #navBar ul {
+                display: block;
+                position: absolute;
+                right: 100px;
+                margin-top: 30px;
+                font-size: 15px;
+                font-weight: 700;
+            }
+
+            #navBar li {
+                margin-right: 40px;
+            }
+
             #portfolio img {
                 width: 290px;
                 border-radius: 10px;
@@ -296,6 +358,16 @@
 </head>
 
 <body>
+
+    <section id="navBar">
+        <h2>START BOOTSTRAP</h2>
+        <button>MENU <i class="fa-solid fa-bars"></i></button>
+        <ul>
+            <li>PORTFOLIO</li>
+            <li>ABOUT</li>
+            <li>CONTACT</li>
+        </ul>
+    </section>
 
     <header>
         <img src="https://startbootstrap.github.io/startbootstrap-freelancer/assets/img/avataaars.svg" alt="">
