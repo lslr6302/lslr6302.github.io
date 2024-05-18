@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS specificity</title>
+    <style>
+        body {
+            font-size: 40px;
+        }
+
+        /* tag selector */
+        li {
+            color: cadetblue !important;
+        }
+
+        /* class selector */
+        /* class selector is more specific*/
+        .first {
+            color: cornflowerblue;
+        }
+
+        /* id selector */
+        #firstid {
+            color: darkslategray;
+        }
+
+        /* longer path > shorter path */
+        ul li {
+            color: aqua !important;
+        }
+
+        /* the last rule override the previous rule */
+        ul li {
+            color: red !important;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>!important > inline > id > class > tag</h1>
+    <ul>
+        <li style="color:firebrick" id="firstid" class="first">Hiking</li>
+        <li>Talking</li>
+        <li>Playing</li>
+        <li>Tennes</li>
+    </ul>
+</body></html>

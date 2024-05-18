@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>position</title>
@@ -38,11 +39,12 @@
 
         .two {
             /* absolute: relative to its container */
-            /* need to set its container to a non-static position */
+            /* need to set its container to a non-static position, usually set to relative since it doesn't want to give up the space and position it had previously, which is become floating */
             /* because absolute element looking for a closest non-static container */
             position: absolute;
             right: 100px;
         }
+
     </style>
 </head>
 
@@ -52,4 +54,6 @@
         <div class="item one">relative</div>
         <div class="item two">absolute</div>
     </div>
-</body></html>
+</body>
+
+</html>
