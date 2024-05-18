@@ -15,16 +15,22 @@
             width: 200px;
             height: 200px;
             font-size: 60px;
+            text-align: center;
         }
 
         #one {
             background-color: cornflowerblue;
+            position: relative;
+            z-index: 2;
         }
 
         #two {
             background-color: cornsilk;
+            position: relative;
+            top: -100px;
+            left: 100px;
+            z-index: 1;
         }
-
     </style>
 </head>
 
@@ -33,6 +39,4 @@
         <div id="one" class="item">one</div>
         <div id="two" class="item">two</div>
     </div>
-</body>
-
-</html>
+</body></html>
