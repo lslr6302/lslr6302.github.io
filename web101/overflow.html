@@ -4,12 +4,29 @@
     <meta charset="UTF-8">
     <title>overflow</title>
     <style>
+        #container {
+            width: 400px;
+            height: 400px;
+            border: solid;
+            /* default */
+            overflow: visible;
+            overflow: hidden;
+            overflow: scroll;
+            overflow: auto;
+        }
 
+        #item {
+            height: 800px;
+            width: 800px;
+            background: linear-gradient(45deg, rgb(246, 227, 243), rgb(237, 235, 204) 30%, rgb(129, 203, 247));
+        }
     </style>
 </head>
 
 <body>
 
-
+    <div id="container">
+        <div id="item"></div>
+    </div>
 
 </body></html>
