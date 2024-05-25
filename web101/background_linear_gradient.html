@@ -4,17 +4,49 @@
     <meta charset="UTF-8">
     <title>background linear gradient</title>
     <style>
-        div {
+        #blackWhite {
             background-color: red;
             border: solid;
             height: 200px;
             background: linear-gradient(to right, white, black);
             background: linear-gradient(45deg, white, black, grey);
+        }
+
+        #rainbow {
+            border: solid;
+            height: 200px;
             background: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
+        }
+
+        #ratio {
+            border: solid;
+            height: 200px;
+            background: linear-gradient(90deg, rgba(246, 227, 243, 1) 0%, rgba(237, 235, 204, 1) 30%, rgba(129, 203, 247, 1) 100%);
+        }
+
+        #picture {
+            display: inline-block;
+            border: solid;
+            height: 528px;
+            width: 400px;
+            background-image: linear-gradient(rgba(210, 231, 199, 0.5) 0%, rgba(237, 235, 204, 0.5) 76%, rgba(238, 203, 206, 0.5) 100%), url(https://images.unsplash.com/photo-1600172454284-934feca24ccd?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+        }
+
+        #gradUsed {
+            display: inline-block;
+            border: solid;
+            height: 528px;
+            width: 400px;
+            background: linear-gradient(rgba(210, 231, 199, 0.5) 0%, rgba(237, 235, 204, 0.5) 76%, rgba(238, 203, 206, 0.5) 100%);
         }
     </style>
 </head>
 
 <body>
-    <div></div>
+    <div id="blackWhite"></div>
+    <div id="rainbow"></div>
+    <div id="ratio"></div>
+    <img src="https://images.unsplash.com/photo-1600172454284-934feca24ccd?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+    <div id="picture"></div>
+    <div id="gradUsed"></div>
 </body></html>
