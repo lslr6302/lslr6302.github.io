@@ -7,6 +7,7 @@
         .item {
             width: 100px;
             border: solid;
+            opacity: 0.7;
         }
 
         .left {
@@ -19,6 +20,14 @@
             height: 200px;
             float: right;
             background-color: deepskyblue;
+        }
+
+        p {
+            border: solid red;
+            /* don't put float element on left */
+            clear: left;
+            clear: right;
+            clear: both;
         }
     </style>
 </head>
